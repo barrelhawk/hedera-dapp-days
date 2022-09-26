@@ -34,4 +34,6 @@ async function walletConnectFcn() {
 	hashconnect.findLocalWallets();
 	hashconnect.connectToLocalWallet(saveData.pairingString);
 
+	return [hashconnect, saveData];
+}
 export default walletConnectFcn;
